@@ -1,1 +1,42 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  position: relative; /* set the header position to relative */
+}
 
+h1 {
+  margin: 0;
+  font-size: 48px;
+  position: relative; /* set the text position to relative */
+  z-index: 1; /* set the text z-index to a higher number than the image */
+  top: -15%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  margin: 0;
+  font-style: italic;
+  font-size: 28px;
+  position: relative; /* set the text position to relative */
+  z-index: 1; /* set the text z-index to a higher number than the image */
+  top: -15%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  position: absolute; /* set the image position to absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: rgb(204,230,255);
+}
